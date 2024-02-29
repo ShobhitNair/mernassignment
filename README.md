@@ -1,4 +1,4 @@
-# FullStack Social Media App
+# FullStack App
 
 ## Table of Contents
 - [Introduction](#introduction)

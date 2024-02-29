@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path =require('path')
 require('dotenv').config(); 
 const bodyParser = require('body-parser');
 
@@ -43,10 +44,11 @@ app.post('/api/subscribe', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+app.get('/',(req,res)=>{
+  app.use(express.static(path.resolve(__dirname,"client","build")));
+  res.sendFile(path.resolve(__dirname,"client","build","index.html"))
+})
 
-if(process.env.NODE_ENV === "production"){
-  app.use(express.static("client/build"))
-}
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

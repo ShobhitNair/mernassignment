@@ -11,7 +11,7 @@ A Single Page  MERN App where Email data  store to Mongo DB on Subscription.
 
 
 ## Demo
-![Alt Text](server\client\build\assets\Screenshot 2024-02-29 163143.png)
+![image](https://github.com/ShobhitNair/mernassignment/blob/main/server/client/public/assets/Screenshot%202024-02-29%20163143.png))
 ![Alt Text](server\client\build\assets\Screenshot 2024-02-29 163557.png)
 ![Alt Text](server\client\build\assets\Screenshot 2024-02-29 163614.png)
 
